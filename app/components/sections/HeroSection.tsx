@@ -1,9 +1,6 @@
-import Image from 'next/image';
+'use client';
 
-const imgHome = "/home-background.png";
-const imgChatGptImage14DeDezDe20251513261 = "/flowthink-icon.png";
-const imgFlowThink = "/flowthink-logo.png";
-const imgEllipse1 = "/hero-ellipse.png";
+import Image from 'next/image';
 
 export default function HeroSection() {
   return (
@@ -12,22 +9,13 @@ export default function HeroSection() {
       <div aria-hidden="true" className="absolute inset-0 pointer-events-none">
         <div className="absolute bg-[#03081b] inset-0" />
         <div className="absolute inset-0 opacity-[0.61] overflow-hidden">
-          <div className="absolute inset-0">
-            <Image
-              alt="Home Background"
-              src={imgHome}
-              fill
-              className="object-cover"
-              priority
-              quality={90}
-            />
-          </div>
+          <div className="absolute h-full w-full bg-gradient-to-br from-[#0a1929] via-[#03081b] to-[#0a1929]" />
         </div>
         {/* Decorative Ellipse */}
         <div className="absolute inset-0 flex items-center justify-center overflow-hidden">
           <div className="relative w-full h-full max-w-[600px] max-h-[600px] lg:max-w-[800px] lg:max-h-[800px]">
             <div className="absolute inset-[-36.76%]">
-              <img alt="" className="block max-w-none size-full" src={imgEllipse1} />
+              <div className="block size-full rounded-full bg-gradient-to-br from-cyan-400/20 via-blue-500/10 to-transparent blur-3xl" />
             </div>
           </div>
         </div>
@@ -56,23 +44,20 @@ export default function HeroSection() {
           {/* Logo Section */}
           <div className="flex items-center justify-center gap-2 sm:gap-4 mb-6 sm:mb-8 lg:mb-12">
           {/* Logo Icon */}
-          <div className="relative w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-[85px] lg:h-[89px] overflow-hidden pointer-events-none">
+          <div className="relative w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-[85px] lg:h-[89px]">
             <Image
+              src="/logo-icon.png"
               alt="FlowThink Logo Icon"
-              src={imgChatGptImage14DeDezDe20251513261}
               fill
               className="object-contain"
-              priority
             />
           </div>
           
           {/* Logo Text */}
-          <div className="relative w-32 h-8 sm:w-48 sm:h-12 md:w-72 md:h-14 lg:w-96 lg:h-16 xl:w-[504px] xl:h-[79px]">
-            <img
-              alt="FlowThink"
-              className="block max-w-none size-full object-contain"
-              src={imgFlowThink}
-            />
+          <div className="relative">
+            <h1 className="text-white font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl tracking-tight">
+              FlowThink
+            </h1>
           </div>
         </div>
 
@@ -85,9 +70,16 @@ export default function HeroSection() {
         </div>
 
         {/* CTA Button */}
-        <button className="px-8 sm:px-12 md:px-16 lg:px-20 xl:px-28 py-3 sm:py-4 bg-[#1a7a99] hover:bg-[#15647d] text-white font-bold text-base sm:text-lg md:text-xl rounded-full shadow-lg transition-all duration-300 hover:shadow-xl">
+        <a 
+          href="#contato"
+          className="px-8 sm:px-12 md:px-16 lg:px-20 xl:px-28 py-3 sm:py-4 bg-[#1a7a99] hover:bg-[#15647d] text-white font-bold text-base sm:text-lg md:text-xl rounded-full shadow-lg transition-all duration-300 hover:shadow-xl inline-block cursor-pointer"
+          onClick={(e) => {
+            e.preventDefault();
+            document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }}
+        >
           Fale conosco
-        </button>
+        </a>
       </div>
     </section>
   );
