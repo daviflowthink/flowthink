@@ -3,3 +3,20 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Safe area support for iOS devices */
+.h-safe-area-inset-bottom {
+  height: env(safe-area-inset-bottom);
+}
+
+/* Custom scrollbar for mobile navbar */
+@media (max-width: 768px) {
+  .mobile-navbar-scroll {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .mobile-navbar-scroll::-webkit-scrollbar {
+    display: none;
+  }
+}

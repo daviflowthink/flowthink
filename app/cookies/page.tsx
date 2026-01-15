@@ -1,18 +1,18 @@
 import Link from 'next/link';
-
-const imgCookies = "/privacy-background.png";
-const imgChatGptImage = "/flowthink-icon.png";
-const imgFlowThink = "/flowthink-logo.png";
+import Image from 'next/image';
 
 export default function CookiesPage() {
   return (
     <div className="relative min-h-screen w-full overflow-hidden">
       {/* Background */}
       <div className="fixed inset-0 -z-10">
-        <img 
-          alt="" 
-          className="w-full h-full object-cover" 
-          src={imgCookies} 
+        <div className="absolute inset-0 bg-[#01174c]" />
+        <Image
+          src="/footer-bg.png"
+          alt=""
+          fill
+          className="object-cover opacity-80"
+          priority
         />
       </div>
 
@@ -23,11 +23,12 @@ export default function CookiesPage() {
             {/* Logo */}
             <div className="flex items-center justify-between">
               <Link href="/" className="flex items-center gap-2 sm:gap-3">
-              <div className="relative w-[50px] h-[53px] sm:w-[65px] sm:h-[68px] lg:w-[85px] lg:h-[89px] overflow-hidden flex-shrink-0">
-                <img
+              <div className="relative w-12 h-12 sm:w-16 sm:h-16 lg:w-[85px] lg:h-[89px] flex-shrink-0">
+                <Image
+                  src="/logo-icon.png"
                   alt="FlowThink Logo"
-                  className="absolute h-[352.78%] left-[-135.83%] max-w-none top-[-92.46%] w-[370.42%]"
-                  src={imgChatGptImage}
+                  fill
+                  className="object-contain"
                 />
               </div>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 241 38" fill="none" className="w-[140px] h-[22px] sm:w-[180px] sm:h-[28px] lg:w-[241px] lg:h-[37.776px]">
@@ -52,21 +53,19 @@ export default function CookiesPage() {
           </div>
 
             {/* Desktop Navigation */}
-            <nav className="hidden md:flex items-center justify-center">
-              <div className="bg-[#03081B] rounded-full px-4 sm:px-6 lg:px-8 py-2 sm:py-3 lg:py-4 flex gap-4 lg:gap-6 xl:gap-8">
-                <Link href="/#home" className="font-bold text-sm sm:text-base lg:text-xl xl:text-2xl text-white hover:text-white/80 transition-colors whitespace-nowrap">
-                  Home
-                </Link>
-                <Link href="/#servicos" className="font-bold text-sm sm:text-base lg:text-xl xl:text-2xl text-white hover:text-white/80 transition-colors whitespace-nowrap">
-                  Serviços
-                </Link>
-                <Link href="/#quem-somos" className="font-bold text-sm sm:text-base lg:text-xl xl:text-2xl text-white hover:text-white/80 transition-colors whitespace-nowrap">
-                  Quem somos
-                </Link>
-                <Link href="/#contato" className="font-bold text-sm sm:text-base lg:text-xl xl:text-2xl text-white hover:text-white/80 transition-colors whitespace-nowrap">
-                  Contato
-                </Link>
-              </div>
+            <nav className="hidden md:flex absolute top-12 lg:top-20 xl:top-[120px] left-1/2 -translate-x-1/2 bg-[#03081B]/80 backdrop-blur-md rounded-full px-6 lg:px-8 py-3 lg:py-4 gap-4 lg:gap-6 xl:gap-8 z-20 border border-white/10 shadow-2xl transition-all duration-300 hover:bg-[#03081B]/90 hover:shadow-cyan-500/20 hover:border-cyan-400/30">
+              <Link href="/#home" className="font-bold text-base lg:text-xl xl:text-2xl text-white hover:text-cyan-400 transition-all duration-300 hover:scale-110 whitespace-nowrap">
+                Home
+              </Link>
+              <Link href="/#servicos" className="font-bold text-base lg:text-xl xl:text-2xl text-white hover:text-cyan-400 transition-all duration-300 hover:scale-110 whitespace-nowrap">
+                Serviços
+              </Link>
+              <Link href="/#quem-somos" className="font-bold text-base lg:text-xl xl:text-2xl text-white hover:text-cyan-400 transition-all duration-300 hover:scale-110 whitespace-nowrap">
+                Quem somos
+              </Link>
+              <Link href="/#contato" className="font-bold text-base lg:text-xl xl:text-2xl text-white hover:text-cyan-400 transition-all duration-300 hover:scale-110 whitespace-nowrap">
+                Contato
+              </Link>
             </nav>
           </div>
         </div>

@@ -23,7 +23,7 @@ export default function PrivacidadePage() {
             {/* Logo */}
             <div className="flex items-center justify-between">
               <Link href="/" className="flex items-center gap-2 sm:gap-3">
-              <div className="relative w-[50px] h-[53px] sm:w-[65px] sm:h-[68px] lg:w-[85px] lg:h-[89px] flex-shrink-0">
+              <div className="relative w-12 h-12 sm:w-16 sm:h-16 lg:w-[85px] lg:h-[89px] flex-shrink-0">
                 <Image
                   src="/logo-icon.png"
                   alt="FlowThink Logo"
@@ -31,7 +31,17 @@ export default function PrivacidadePage() {
                   className="object-contain"
                 />
               </div>
-              <span className="text-white font-extrabold text-xl sm:text-2xl lg:text-3xl">FlowThink</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 241 38" fill="none" className="w-[140px] h-[22px] sm:w-[180px] sm:h-[28px] lg:w-[241px] lg:h-[37.776px]">
+                <path d="M0 37.2595V2.01356H23.4036V8.15751H7.47327V16.556H21.8503V22.6999H7.47327V37.2595H0Z" fill="white"/>
+                <path d="M35.6447 2.01356V37.2595H28.2923V2.01356H35.6447Z" fill="white"/>
+                <path d="M53.5124 37.7758C50.8315 37.7758 48.513 37.2079 46.5569 36.072C44.6124 34.9247 43.1108 33.3299 42.0522 31.2876C40.9937 29.2339 40.4644 26.8532 40.4644 24.1455C40.4644 21.4149 40.9937 19.0284 42.0522 16.9862C43.1108 14.9325 44.6124 13.3377 46.5569 12.2018C48.513 11.0545 50.8315 10.4808 53.5124 10.4808C56.1933 10.4808 58.5061 11.0545 60.4506 12.2018C62.4067 13.3377 63.914 14.9325 64.9726 16.9862C66.0311 19.0284 66.5604 21.4149 66.5604 24.1455C66.5604 26.8532 66.0311 29.2339 64.9726 31.2876C63.914 33.3299 62.4067 34.9247 60.4506 36.072C58.5061 37.2079 56.1933 37.7758 53.5124 37.7758ZM53.5469 32.0965C54.7666 32.0965 55.7849 31.7523 56.6018 31.0639C57.4188 30.364 58.0343 29.4118 58.4486 28.2071C58.8743 27.0024 59.0872 25.6313 59.0872 24.0939C59.0872 22.5565 58.8743 21.1854 58.4486 19.9807C58.0343 18.776 57.4188 17.8237 56.6018 17.1239C55.7849 16.424 54.7666 16.0741 53.5469 16.0741C52.3158 16.0741 51.2802 16.424 50.4403 17.1239C49.6118 17.8237 48.9847 18.776 48.559 19.9807C48.1448 21.1854 47.9377 22.5565 47.9377 24.0939C47.9377 25.6313 48.1448 27.0024 48.559 28.2071C48.9847 29.4118 49.6118 30.364 50.4403 31.0639C51.2802 31.7523 52.3158 32.0965 53.5469 32.0965Z" fill="white"/>
+                <path d="M75.9063 37.2595L68.6919 10.825H76.1307L80.2384 28.5857H80.48L84.7603 10.825H92.061L96.4104 28.4824H96.6347L100.673 10.825H108.095L100.898 37.2595H93.1138L88.5574 20.6347H88.2295L83.673 37.2595H75.9063Z" fill="white"/>
+                <path d="M108.341 8.15751V2.01356H137.371V8.15751H126.549V37.2595H119.162V8.15751H108.341Z" fill="white"/>
+                <path d="M149.366 21.9771V37.2595H142.014V2.01356H149.159V15.4889H149.47C150.068 13.9286 151.035 12.7067 152.369 11.8232C153.704 10.9283 155.378 10.4808 157.392 10.4808C159.233 10.4808 160.838 10.8824 162.207 11.6855C163.588 12.4772 164.658 13.6188 165.417 15.1103C166.188 16.5904 166.568 18.363 166.556 20.4282V37.2595H159.204V21.7361C159.215 20.1069 158.801 18.8391 157.961 17.9327C157.133 17.0264 155.971 16.5732 154.475 16.5732C153.474 16.5732 152.588 16.7854 151.817 17.2099C151.058 17.6344 150.459 18.254 150.022 19.0686C149.596 19.8717 149.378 20.8412 149.366 21.9771Z" fill="white"/>
+                <path d="M172.343 37.2595V10.825H179.695V37.2595H172.343ZM176.036 7.41748C174.943 7.41748 174.005 7.05607 173.223 6.33325C172.452 5.59896 172.066 4.72126 172.066 3.70013C172.066 2.69049 172.452 1.82425 173.223 1.10144C174.005 0.367146 174.943 0 176.036 0C177.129 0 178.061 0.367146 178.832 1.10144C179.614 1.82425 180.006 2.69049 180.006 3.70013C180.006 4.72126 179.614 5.59896 178.832 6.33325C178.061 7.05607 177.129 7.41748 176.036 7.41748Z" fill="white"/>
+                <path d="M192.937 21.9771V37.2595H185.585V10.825H192.592V15.4889H192.903C193.49 13.9515 194.473 12.7353 195.854 11.8404C197.235 10.934 198.909 10.4808 200.876 10.4808C202.717 10.4808 204.323 10.8824 205.692 11.6855C207.061 12.4887 208.125 13.636 208.885 15.1275C209.644 16.6076 210.024 18.3745 210.024 20.4282V37.2595H202.671V21.7361C202.683 20.1184 202.269 18.8563 201.429 17.95C200.589 17.0321 199.432 16.5732 197.96 16.5732C196.97 16.5732 196.096 16.7854 195.336 17.2099C194.588 17.6344 194.002 18.254 193.576 19.0686C193.162 19.8717 192.949 20.8412 192.937 21.9771Z" fill="white"/>
+                <path d="M222.481 29.6527L222.498 20.8584H223.568L232.06 10.825H240.499L229.091 24.1111H227.348L222.481 29.6527ZM215.819 37.2595V2.01356H223.171V37.2595H215.819ZM232.388 37.2595L224.586 25.7461L229.488 20.5659L241 37.2595H232.388Z" fill="white"/>
+              </svg>
             </Link>
 
             {/* Mobile Menu Button */}
@@ -43,21 +53,19 @@ export default function PrivacidadePage() {
           </div>
 
             {/* Desktop Navigation */}
-            <nav className="hidden md:flex items-center justify-center">
-              <div className="bg-[#03081B] rounded-full px-4 sm:px-6 lg:px-8 py-2 sm:py-3 lg:py-4 flex gap-4 lg:gap-6 xl:gap-8">
-                <Link href="/#home" className="font-bold text-sm sm:text-base lg:text-xl xl:text-2xl text-white hover:text-white/80 transition-colors whitespace-nowrap">
-                  Home
-                </Link>
-                <Link href="/#servicos" className="font-bold text-sm sm:text-base lg:text-xl xl:text-2xl text-white hover:text-white/80 transition-colors whitespace-nowrap">
-                  Serviços
-                </Link>
-                <Link href="/#quem-somos" className="font-bold text-sm sm:text-base lg:text-xl xl:text-2xl text-white hover:text-white/80 transition-colors whitespace-nowrap">
-                  Quem somos
-                </Link>
-                <Link href="/#contato" className="font-bold text-sm sm:text-base lg:text-xl xl:text-2xl text-white hover:text-white/80 transition-colors whitespace-nowrap">
-                  Contato
-                </Link>
-              </div>
+            <nav className="hidden md:flex absolute top-12 lg:top-20 xl:top-[120px] left-1/2 -translate-x-1/2 bg-[#03081B]/80 backdrop-blur-md rounded-full px-6 lg:px-8 py-3 lg:py-4 gap-4 lg:gap-6 xl:gap-8 z-20 border border-white/10 shadow-2xl transition-all duration-300 hover:bg-[#03081B]/90 hover:shadow-cyan-500/20 hover:border-cyan-400/30">
+              <Link href="/#home" className="font-bold text-base lg:text-xl xl:text-2xl text-white hover:text-cyan-400 transition-all duration-300 hover:scale-110 whitespace-nowrap">
+                Home
+              </Link>
+              <Link href="/#servicos" className="font-bold text-base lg:text-xl xl:text-2xl text-white hover:text-cyan-400 transition-all duration-300 hover:scale-110 whitespace-nowrap">
+                Serviços
+              </Link>
+              <Link href="/#quem-somos" className="font-bold text-base lg:text-xl xl:text-2xl text-white hover:text-cyan-400 transition-all duration-300 hover:scale-110 whitespace-nowrap">
+                Quem somos
+              </Link>
+              <Link href="/#contato" className="font-bold text-base lg:text-xl xl:text-2xl text-white hover:text-cyan-400 transition-all duration-300 hover:scale-110 whitespace-nowrap">
+                Contato
+              </Link>
             </nav>
           </div>
         </div>
@@ -219,7 +227,7 @@ export default function PrivacidadePage() {
               <Link href="/privacidade" className="text-xs sm:text-sm md:text-base font-medium text-white hover:opacity-80 transition-opacity">
                 Política de privacidade
               </Link>
-              <Link href="/privacidade" className="text-xs sm:text-sm md:text-base font-medium text-white hover:opacity-80 transition-opacity">
+              <Link href="/cookies" className="text-xs sm:text-sm md:text-base font-medium text-white hover:opacity-80 transition-opacity">
                 Política de Cookies
               </Link>
             </nav>

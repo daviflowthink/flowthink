@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import MobileNavbar from "./components/MobileNavbar";
 
 const inter = Inter({ subsets: ["latin"], weight: ["400", "700"] });
 
@@ -16,10 +17,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" suppressHydrationWarning>
-      <body className={`${inter.className} min-h-screen flex flex-col`} suppressHydrationWarning>
+      <body className={`${inter.className} min-h-screen flex flex-col pt-20 md:pt-0`} suppressHydrationWarning>
         <div className="flex-1">
           {children}
         </div>
+        <MobileNavbar />
       </body>
     </html>
   );

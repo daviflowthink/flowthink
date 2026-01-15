@@ -120,24 +120,24 @@ export default function FooterSection() {
           <div className="max-w-7xl mx-auto">
             <div className="flex flex-col lg:flex-row gap-0 relative">
               {/* Left Side - WhatsApp CTA */}
-              <div className="w-full lg:w-[690px] bg-[#03081b] py-8 sm:py-12 lg:py-16 px-4 sm:px-8 lg:px-16 flex flex-col items-center justify-center text-center rounded-t-2xl lg:rounded-t-none lg:rounded-l-2xl">
-              <h3 className="text-white text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-semibold font-['Inter'] leading-tight lg:leading-[64px] mb-4 sm:mb-6 lg:mb-8 max-w-[471px]">
+              <div className="w-full lg:w-[690px] bg-[#03081b] py-12 sm:py-12 lg:py-16 px-4 sm:px-8 lg:px-16 flex flex-col items-center justify-center text-center rounded-t-2xl lg:rounded-t-none lg:rounded-l-2xl">
+              <h3 className="text-white text-3xl sm:text-3xl lg:text-4xl xl:text-5xl font-semibold font-['Inter'] leading-tight lg:leading-[64px] mb-6 sm:mb-6 lg:mb-8 max-w-[471px]">
                 Leve o seu negocio para outro nível
               </h3>
               
-              <p className="text-white text-lg sm:text-xl lg:text-2xl font-extrabold font-['Inter'] mb-4 sm:mb-6 lg:mb-8 max-w-[481px]">
+              <p className="text-white text-xl sm:text-xl lg:text-2xl font-extrabold font-['Inter'] mb-6 sm:mb-6 lg:mb-8 max-w-[481px]">
                 Entre em Contato por nosso WhatsApp
               </p>
               
               <button
                 onClick={openWhatsApp}
-                className="bg-[#3febbd] hover:bg-[#35d4a8] transition-colors rounded-[20px] w-[200px] sm:w-[230px] lg:w-[255px] h-12 sm:h-14 lg:h-16 flex items-center justify-center gap-2 cursor-pointer"
+                className="bg-[#3febbd] hover:bg-[#35d4a8] hover:scale-105 hover:-translate-y-1 shadow-lg shadow-green-500/25 hover:shadow-2xl hover:shadow-green-400/40 transition-all duration-500 rounded-[20px] w-[220px] sm:w-[230px] lg:w-[255px] h-14 sm:h-14 lg:h-16 flex items-center justify-center gap-2 cursor-pointer border border-green-400/20 hover:border-green-400/60"
                 aria-label="Contato via WhatsApp"
               >
                 <svg viewBox="0 0 24 24" className="w-6 h-6 sm:w-7 sm:h-7" fill="currentColor">
                   <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
                 </svg>
-                <span className="font-bold text-sm sm:text-base">WhatsApp</span>
+                <span className="font-bold text-base sm:text-base">WhatsApp</span>
               </button>
               </div>
 
@@ -156,12 +156,12 @@ export default function FooterSection() {
               </div>
 
               {/* Right Side - Contact Form */}
-              <div className="w-full lg:w-[565px] bg-[#03081b] py-6 sm:py-8 px-4 sm:px-6 lg:px-12 rounded-b-2xl lg:rounded-b-none lg:rounded-r-2xl">
+              <div className="w-full lg:w-[565px] bg-[#03081b] py-8 sm:py-8 px-4 sm:px-6 lg:px-12 rounded-b-2xl lg:rounded-b-none lg:rounded-r-2xl">
               <h3 className="text-white text-lg sm:text-xl lg:text-2xl font-extrabold font-['Inter'] text-center mb-4 sm:mb-6 lg:mb-8">
                 FALE CONOSCO
               </h3>
               
-              <form onSubmit={handleSubmit} className="w-full max-w-[388px] mx-auto space-y-3 sm:space-y-4">
+              <form onSubmit={handleSubmit} className="w-full max-w-[388px] mx-auto space-y-4 sm:space-y-4">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                   <div>
                     <label className="block text-white text-xs font-normal font-['Inter'] leading-6 sm:leading-7 mb-1">
@@ -174,7 +174,7 @@ export default function FooterSection() {
                       onChange={handleInputChange}
                       placeholder="Nome"
                       required
-                      className="w-full h-10 sm:h-[47px] bg-white rounded-[5px] border border-[#69727d] px-3 sm:px-4 text-sm font-normal font-['Inter'] text-[#333] placeholder:text-[#9a9a9a] focus:outline-none focus:ring-2 focus:ring-[#3febbd]"
+                      className="w-full h-12 sm:h-[47px] bg-white rounded-[5px] border border-[#69727d] px-3 sm:px-4 text-sm font-normal font-['Inter'] text-[#333] placeholder:text-[#9a9a9a] focus:outline-none focus:ring-2 focus:ring-[#3febbd]"
                     />
                   </div>
                   
@@ -189,7 +189,7 @@ export default function FooterSection() {
                       onChange={handleInputChange}
                       placeholder="Sobrenome"
                       required
-                      className="w-full h-10 sm:h-[47px] bg-white rounded-[5px] border border-[#69727d] px-3 sm:px-4 text-sm font-normal font-['Inter'] text-[#333] placeholder:text-[#9a9a9a] focus:outline-none focus:ring-2 focus:ring-[#3febbd]"
+                      className="w-full h-12 sm:h-[47px] bg-white rounded-[5px] border border-[#69727d] px-3 sm:px-4 text-sm font-normal font-['Inter'] text-[#333] placeholder:text-[#9a9a9a] focus:outline-none focus:ring-2 focus:ring-[#3febbd]"
                     />
                   </div>
                 </div>
@@ -206,7 +206,7 @@ export default function FooterSection() {
                       onChange={handleInputChange}
                       placeholder="Email"
                       required
-                      className="w-full h-10 sm:h-[47px] bg-white rounded-[5px] border border-[#69727d] px-3 sm:px-4 text-sm font-normal font-['Inter'] text-[#333] placeholder:text-[#9a9a9a] focus:outline-none focus:ring-2 focus:ring-[#3febbd]"
+                      className="w-full h-12 sm:h-[47px] bg-white rounded-[5px] border border-[#69727d] px-3 sm:px-4 text-sm font-normal font-['Inter'] text-[#333] placeholder:text-[#9a9a9a] focus:outline-none focus:ring-2 focus:ring-[#3febbd]"
                     />
                   </div>
                   
@@ -221,7 +221,7 @@ export default function FooterSection() {
                       onChange={handleInputChange}
                       placeholder="Empresa"
                       required
-                      className="w-full h-10 sm:h-[47px] bg-white rounded-[5px] border border-[#69727d] px-3 sm:px-4 text-sm font-normal font-['Inter'] text-[#333] placeholder:text-[#9a9a9a] focus:outline-none focus:ring-2 focus:ring-[#3febbd]"
+                      className="w-full h-12 sm:h-[47px] bg-white rounded-[5px] border border-[#69727d] px-3 sm:px-4 text-sm font-normal font-['Inter'] text-[#333] placeholder:text-[#9a9a9a] focus:outline-none focus:ring-2 focus:ring-[#3febbd]"
                     />
                   </div>
                 </div>
@@ -265,7 +265,7 @@ export default function FooterSection() {
                     onChange={handleInputChange}
                     placeholder="Mensagem"
                     required
-                    className="w-full h-20 sm:h-[94px] bg-white rounded-[5px] border border-[#69727d] px-3 sm:px-4 py-2 text-sm font-normal font-['Inter'] text-[#333] placeholder:text-[#9a9a9a] focus:outline-none focus:ring-2 focus:ring-[#3febbd] resize-none"
+                    className="w-full h-24 sm:h-[94px] bg-white rounded-[5px] border border-[#69727d] px-3 sm:px-4 py-2 text-sm font-normal font-['Inter'] text-[#333] placeholder:text-[#9a9a9a] focus:outline-none focus:ring-2 focus:ring-[#3febbd] resize-none"
                   />
                 </div>
 
@@ -293,7 +293,7 @@ export default function FooterSection() {
                 <div className="flex justify-center pt-2 sm:pt-4">
                   <button
                     type="submit"
-                    className="bg-[#3febbd] hover:bg-[#35d4a8] transition-colors rounded-[20px] w-20 sm:w-[86.59px] h-9 sm:h-10 text-center text-[#0f1014] text-xs sm:text-sm font-medium font-['Heebo'] leading-4 cursor-pointer"
+                    className="bg-[#3febbd] hover:bg-[#35d4a8] hover:scale-105 hover:-translate-y-1 shadow-lg shadow-green-500/25 hover:shadow-2xl hover:shadow-green-400/40 transition-all duration-500 rounded-[20px] w-24 sm:w-[86.59px] h-11 sm:h-10 text-center text-[#0f1014] text-sm sm:text-sm font-medium font-['Heebo'] leading-4 cursor-pointer border border-green-400/20 hover:border-green-400/60"
                   >
                     Enviar
                   </button>
@@ -325,7 +325,7 @@ export default function FooterSection() {
               <Link href="/privacidade" className="text-xs sm:text-sm md:text-base font-medium text-white hover:opacity-80 transition-opacity">
                 Política de privacidade
               </Link>
-              <Link href="/privacidade" className="text-xs sm:text-sm md:text-base font-medium text-white hover:opacity-80 transition-opacity">
+              <Link href="/cookies" className="text-xs sm:text-sm md:text-base font-medium text-white hover:opacity-80 transition-opacity">
                 Política de Cookies
               </Link>
             </nav>
